@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chirag Kumar | Designer & Developer Portfolio</title>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  
+  <style>
+    :root {
+      --primary: #ffd54f;
+      --primary-dark: #f57f17;
+      --dark: #1a1a1a;
+      --light: #f9f9f9;
+      --card-bg: #ffffff;
+      --text: #333;
+    }
+
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: var(--light);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    /* --- Navigation --- */
+    nav {
+      background: rgba(255, 255, 255, 0.95);
+      padding: 1rem 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      text-align: center;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: var(--dark);
+      font-weight: 600;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--primary-dark);
+    }
+
+    /* --- Header / Hero --- */
+    header {
+      background: linear-gradient(135deg, var(--primary), #fff176);
+      padding: 100px 20px;
+      text-align: center;
+      clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 3.5rem;
+      font-weight: 700;
+      color: var(--dark);
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+      color: #444;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* --- Sections --- */
+    section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 80px 20px;
+    }
+
+    h2 {
+      font-size: 2.2rem;
+      margin-bottom: 40px;
+      position: relative;
+      display: inline-block;
+    }
+
+    h2::after {
+      content: '';
+      position: absolute;
+      width: 50%;
+      height: 4px;
+      background: var(--primary);
+      bottom: -10px;
+      left: 0;
+    }
+
+    /* --- Grid System --- */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      margin-top: 20px;
+    }
+
+    /* --- Cards --- */
+    .card {
+      background: var(--card-bg);
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+      transition: all 0.3s ease;
+      border: 1px solid #eee;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+      border-color: var(--primary);
+    }
+
+    .card h3 {
+      margin-top: 0;
+      font-size: 1.4rem;
+      color: var(--dark);
+    }
+
+    .card p {
+      font-size: 0.95rem;
+      color: #666;
+      flex-grow: 1;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background: var(--dark);
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      text-align: center;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background: var(--primary-dark);
+      color: var(--dark);
+    }
+
+    /* --- Footer --- */
+    footer {
+      background: var(--dark);
+      color: #fff;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .social-links {
+      margin: 20px 0;
+    }
+
+    .social-links a {
+      color: var(--primary);
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: 600;
+    }
+
+    /* Mobile Responsive */
+    @media (max-width: 768px) {
+      header h1 { font-size: 2.5rem; }
+      section { padding: 40px 20px; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#work">My Work</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <header>
+    <h1>Chirag Kumar</h1>
+    <p>B.Tech 2nd Year Student | UI/UX Designer | Graphic Artist | Web Developer</p>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      Hello! I am <strong>Chirag Kumar</strong>, an 18-year-old developer and designer currently pursuing my 
+      <strong>B.Tech</strong>. My journey in design started with a simple passion for visuals at 
+      <strong>SVM Inter College, Shamli</strong>, and has grown into a professional skill set covering 
+      everything from brand identity to responsive web development. I love creating designs that are 
+      not only beautiful but also solve problems.
+    </p>
+  </section>
+
+  <section id="services" style="background: #fff; max-width: 100%;">
+    <div style="max-width: 1100px; margin: auto; padding: 0 20px;">
+      <h2>What I Do</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Graphic Design</h3>
+          <p>Eye-catching thumbnails, professional posters, and viral social media story designs.</p>
+        </div>
+        <div class="card">
+          <h3>Branding & Logos</h3>
+          <p>Creating modern and meaningful logos that help brands stand out in a crowded market.</p>
+        </div>
+        <div class="card">
+          <h3>Web Development</h3>
+          <p>Clean, responsive, and fast-loading web pages built with the latest web standards.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="work">
+    <h2>Featured Projects</h2>
+    <p>Explore my latest design and development work below.</p>
+    
+    <div class="grid">
+      
+      <div class="card">
+        <h3>Logo Design Collection</h3>
+        <p>A gallery of minimalist and impactful logos created for various brands.</p>
+        <a href="https://www.canva.com/design/DAG0qXzaCwU/qzzaP3Q_FCTrvMeM2lG2Dw/edit?utm_content=DAG0qXzaCwU&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank" class="btn">View Designs</a>
+      </div>
+
+      <div class="card">
+        <h3>Poster Making Work</h3>
+        <p>Creative poster designs focusing on high-impact typography and visual storytelling.</p>
+        <a href="https://www.canva.com/design/DAG3SqOe490/TbB3HjVETHqKbTcgVaC4xA/edit?utm_content=DAG3SqOe490&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank" class="btn">View Posters</a>
+      </div>
+
+      <div class="card">
+        <h3>Social Media Story Work</h3>
+        <p>Vertical content designs optimized for maximum engagement on mobile platforms.</p>
+        <a href="https://www.canva.com/design/DAG1wpOf_I0/G-B0aee0PZW0td33yQBLpw/edit?utm_content=DAG1wpOf_I0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank" class="btn">View Stories</a>
+      </div>
+
+      <div class="card">
+        <h3>UI/UX Design Case</h3>
+        <p>User-focused interface design exploring clean layout, hierarchy, and user flow.</p>
+        <a href="https://www.canva.com/design/DAG7fuhS4w8/hsbpdP9wvZThmHOWZYqJMw/edit?utm_content=DAG7fuhS4w8&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank" class="btn">View UI/UX</a>
+      </div>
+
+      <div class="card">
+        <h3>Development Work</h3>
+        <p>Check out my coding projects, web experiments, and open-source contributions.</p>
+        <a href="https://github.com/ChiragKumarChouhan" target="_blank" class="btn">Visit GitHub</a>
+      </div>
+
+    </div>
+  </section>
+
+  <footer id="contact">
+    <h3>Ready to work together?</h3>
+    <p>I am currently available for freelance projects and collaborations.</p>
+    <div class="social-links">
+      <a href="#">Instagram</a> | 
+      <a href="#">WhatsApp</a> | 
+      <a href="mailto:your@email.com">Email Me</a>
+    </div>
+    <p style="font-size: 0.8rem; color: #777; margin-top: 40px;">&copy; 2024 Chirag Kumar. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
